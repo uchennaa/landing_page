@@ -79,3 +79,53 @@ button {
     padding: 20px;  
     color: #E5E7EB;
 }
+
+.information {
+    text-align: center;
+}
+
+.titletwo {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 1000;
+    margin: 10px 0;
+}
+.four {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border: 3px solid #3882F6;
+    border-radius: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 106px;
+    flex-wrap: wrap;
+}
+
+.quote {
+    border: 1px solid red;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 20px 0 10px 0;
+}
+
+.middle {
+    flex: 1;
+}
