@@ -22,12 +22,12 @@ body {
 
 .logo {
     color: #F9FAF8;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 a, .textone {
-    font-size: 18px;
+    font-size: 15px;
     color: #E5E7EB;
 }
 
@@ -40,11 +40,11 @@ a, .textone {
     display: flex;
     padding-left: 70px;
     padding-right: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .hero {
-    flex: 1;
+    flex: 1; /* Both .hero and .placeholder have flex 1 to distribute remaining space equally in lower-header */
 }
 
 .placeholder {
@@ -58,7 +58,7 @@ a, .textone {
 
 .titleone {
     color: #F9FAF8;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 900;
 }
 
@@ -82,6 +82,7 @@ button {
 
 .information {
     text-align: center;
+     /* information, quote and action have all flex 1 in order to equally distribute the middle space between then */
 }
 
 .titletwo {
@@ -93,7 +94,7 @@ button {
 .four {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     gap: 15px;
 }
 
@@ -113,19 +114,42 @@ button {
 }
 
 .quote {
-    border: 1px solid red;
     background-color: #E5E7EB;
     color: #1F2937;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* information, quote and action have all flex 1 in order to equally distribute the middle space between then */
+    border: 1px solid red;
 }
 
 .text {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    padding: 20px 0 10px 0;
+    padding: 30px 0 10px 0;
+}
+
+.signature {
+    font-weight: 900;
+    padding-bottom: 30px;
 }
 
 .middle {
-    flex: 1;
+    flex: 1; /* To take remaining space for grab and push down footer */
+    border: 1px solid red;
+}
+
+.container {
+    background-color: #3882F6;
+    margin: 30px 70px;
+    display: flex; 
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.container button {
+    border: 2px solid white;   
 }
